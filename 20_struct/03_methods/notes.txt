@@ -1,0 +1,3 @@
+(p person) is the "receiver"
+it is another parameter
+not idiomatic to use "this" or "self"

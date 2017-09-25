@@ -1,25 +1,17 @@
 package main
 
 import "fmt"
-import "math"
+//import "math"
 
 func main()  {
-	a,b := 1,1
-	sum := 12
-
-	for {
-		c := math.Sqrt(float64(a * a + b * b))
-		for a+b+int(c) <= sum {
-		for a+b+int(c) <= sum {
-			if a + b + int(c) == sum {
-				fmt.Println("The triplet is", a, b, c)
+	for a := 1; a < 998/2; a++ {
+		for b := 1; b < 998; b++ {
+			c := 1000-a-b
+			if a*a+b*b == c*c {
+				fmt.Println("The triplet is: ", a, b, c)
+				fmt.Println("The product is: ", a*b*c)
 				break
 			}
 		}
-			b++
-	}
-		a++
 	}
 }
-
-//UNFINISHED
